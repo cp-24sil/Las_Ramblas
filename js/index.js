@@ -130,7 +130,6 @@ let cur = 0;
 const fade = document.getElementById('fade');
 const panel = document.getElementById('panel');
 
-// Build dots
 const dotsEl = document.getElementById('tb-dots');
 SCENES.forEach((_, i) => {
     const d = document.createElement('div');
@@ -139,7 +138,6 @@ SCENES.forEach((_, i) => {
     dotsEl.appendChild(d);
 });
 
-// Build scenes
 SCENES.forEach((s, si) => {
     const layer = document.createElement('div');
     layer.className = 'scene-layer';
@@ -185,7 +183,6 @@ function showPanel(h, hsEl) {
     const vw = window.innerWidth, vh = window.innerHeight;
     const pw = Math.min(300, vw * 0.88);
 
-    // Horizontal
     if (h.side === 'right' && rect.left + 26 + pw < vw - 16) {
         panel.style.left = (rect.left + 26) + 'px';
         panel.style.right = 'auto';
@@ -193,7 +190,6 @@ function showPanel(h, hsEl) {
         panel.style.right = (vw - rect.left + 14) + 'px';
         panel.style.left = 'auto';
     }
-    // Vertical
     const topVal = Math.max(60, Math.min(rect.top - 16, vh - 230));
     panel.style.top = topVal + 'px';
 
@@ -237,7 +233,6 @@ document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closePanel();
 });
 
-// Touch swipe
 let tx = null;
 document.addEventListener('touchstart', e => tx = e.touches[0].clientX);
 document.addEventListener('touchend', e => {
@@ -247,7 +242,6 @@ document.addEventListener('touchend', e => {
     tx = null;
 });
 
-// Start
 document.getElementById('start-btn').addEventListener('click', () => {
     activate(0);
     const intro = document.getElementById('intro');

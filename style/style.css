@@ -28,7 +28,6 @@
             user-select: none;
         }
 
-        /* ─── SCENE ─── */
         #scene {
             position: fixed;
             inset: 0;
@@ -61,7 +60,6 @@
             pointer-events: none;
         }
 
-        /* ─── TOP BAR ─── */
         #topbar {
             position: fixed;
             top: 0;
@@ -125,7 +123,6 @@
             border-color: var(--paper);
         }
 
-        /* ─── HOTSPOTS ─── */
         .hotspot {
             position: absolute;
             transform: translate(-50%, -50%);
@@ -204,7 +201,6 @@
             }
         }
 
-        /* ─── PANEL ─── */
         #panel {
             position: fixed;
             z-index: 200;
@@ -295,7 +291,6 @@
             color: var(--paper);
         }
 
-        /* ─── NAV ARROWS ─── */
         .scene-nav {
             position: fixed;
             top: 50%;
@@ -339,7 +334,6 @@
             pointer-events: none;
         }
 
-        /* ─── BOTTOM BAR ─── */
         #caption-bar {
             position: fixed;
             bottom: 0;
@@ -353,8 +347,6 @@
             justify-content: space-between;
             pointer-events: none;
         }
-
-        /* .cap-main {} */
 
         .cap-eyebrow {
             font-size: 0.58rem;
@@ -393,7 +385,6 @@
             stroke-width: 2;
         }
 
-        /* ─── TRANSITION ─── */
         #fade {
             position: fixed;
             inset: 0;
@@ -409,7 +400,6 @@
             pointer-events: auto;
         }
 
-        /* ─── INTRO ─── */
         #intro {
             position: fixed;
             inset: 0;
@@ -488,7 +478,6 @@
             border-color: var(--accent);
         }
 
-        /* ─── MOBILE ─── */
         @media (max-width: 580px) {
             .panel-box {
                 width: min(88vw, 300px);
