@@ -1,6 +1,4 @@
 const SCENES = [
-
-    // ── SCÈNE 1 : Transformation urbaine ──────────────────────────────────
     {
         img: './images/las_ramblas.png',
         eyebrow: 'Volet 1 — Transformation urbaine',
@@ -26,8 +24,6 @@ const SCENES = [
             }
         ]
     },
-
-    // ── SCÈNE 2 : Mutation économique ─────────────────────────────────────
     {
         img: './images/La-Ramblas-transaction.jpg',
         eyebrow: 'Volet 2 — Mutation économique',
@@ -47,8 +43,6 @@ const SCENES = [
             }
         ]
     },
-
-    // ── SCÈNE 3 : Tourisme international ──────────────────────────────────
     {
         img: './images/la-rambla-barcelona-tourist.jpg',
         eyebrow: 'Volet 3 — Tourisme international',
@@ -74,8 +68,6 @@ const SCENES = [
             }
         ]
     },
-
-    // ── SCÈNE 4 : Crises & Sécurité ───────────────────────────────────────
     {
         img: './images/Las-Ramblas-security.jpg',
         eyebrow: 'Volet 4 — Crises & Sécurité',
@@ -101,8 +93,6 @@ const SCENES = [
             }
         ]
     },
-
-    // ── SCÈNE 5 : Adaptation durable ──────────────────────────────────────
     {
         img: './images/las_ramblas.png',
         eyebrow: 'Volet 5 — Adaptation durable',
@@ -128,8 +118,6 @@ const SCENES = [
             }
         ]
     },
-
-    // ── SCÈNE 6 : Conclusion ───────────────────────────────────────────────
     {
         img: './images/Las-Ramblas-Barcelona.jpg',
         eyebrow: 'Conclusion',
@@ -139,24 +127,19 @@ const SCENES = [
     }
 ];
 
-// ── SOURCES COMPLÈTES — toutes vérifiées et accessibles ────────────────────
 const SOURCES = [
-    // Volets 1, 2, 3 — Transformation, économie, tourisme
     { label: 'Euronews — Comment les Barcelonais ont dit "No" au tourisme de masse (déc. 2024)', url: 'https://fr.euronews.com/voyages/2024/12/23/comment-les-barcelonais-ont-dit-no-au-tourisme-de-masse-en-2024' },
     { label: 'Transition Europe — Le modèle touristique de Barcelone (2024)',                     url: 'https://transition-europe.eu/news/le-modele-touristique-de-barcelone-un-equilibre-repenser-entre-economie-et-qualite-de-vie/' },
     { label: 'SeLoger — Barcelone : les conséquences du surtourisme (2024)',                      url: 'https://edito.seloger.com/actualites/monde/barcelone-consequences-surtourisme-article-18968.html' },
     { label: 'La Brèche — Face à la touristification, les habitants cherchent les clefs (2026)',  url: 'https://journal-labreche.fr/face-a-la-touristification-les-habitants-cherchent-les-clefs/' },
-    // Volet 4 — Sécurité
     { label: 'TF1 Info — Las Ramblas, passage incontournable des touristes (2017)',               url: 'https://www.tf1info.fr/international/attaque-terroriste-attentat-a-barcelone-les-ramblas-passage-incontournable-des-touristes-2061621.html' },
     { label: 'Euronews — Sécurité renforcée sur les sites touristiques à Barcelone (2017)',       url: 'https://fr.euronews.com/2017/08/23/securite-renforcee-sur-les-sites-touristiques-a-barcelone' },
     { label: 'Le Vif — Sécurité des sites touristiques espagnols (2017)',                         url: 'https://www.levif.be/belgique/attentat-de-barcelone-la-securite-des-sites-touristiques-espagnols-fait-debat/' },
-    // Volet 5 — Adaptation
     { label: 'Equinox Magazine — Barcelone et ses villes voisines unies contre le tourisme (2026)', url: 'https://www.equinoxmagazine.fr/2026/03/10/barcelone-et-ses-villes-voisines-unies-contre-le-tourisme/' },
     { label: 'Visiter Barcelone — Surtourisme à Barcelone : réduire notre impact (2025)',          url: 'https://visiterbarcelone.com/surtourisme-a-barcelone-reduire-notre-impact/' },
     { label: 'Euronews — Les attentats ébranlent le débat sur le tourisme de masse (2017)',        url: 'https://fr.euronews.com/2017/08/29/a-barcelone-les-attentats-ebranlent-le-debat-sur-le-tourisme-de-masse' },
 ];
 
-// ── INIT ────────────────────────────────────────────────────────────────────
 let cur = 0;
 const fade  = document.getElementById('fade');
 const panel = document.getElementById('panel');
@@ -246,7 +229,6 @@ SCENES.forEach((s) => {
     document.getElementById('scene').appendChild(layer);
 });
 
-// ── PANEL ───────────────────────────────────────────────────────────────────
 function showPanel(h, hsEl) {
     document.getElementById('p-tag').textContent   = h.tag;
     document.getElementById('p-title').textContent = h.title;
@@ -277,7 +259,6 @@ document.getElementById('panel-close').addEventListener('click', closePanel);
 document.getElementById('scene').addEventListener('click', closePanel);
 function closePanel() { panel.classList.remove('visible'); }
 
-// ── NAVIGATION ──────────────────────────────────────────────────────────────
 function activate(i) {
     document.querySelectorAll('.scene-layer').forEach((l, li) => l.classList.toggle('active', li === i));
     document.querySelectorAll('.tb-dot').forEach((d, di)     => d.classList.toggle('active', di === i));
