@@ -56,15 +56,29 @@ html, body {
     color: rgba(240,235,224,0.45); letter-spacing: 0.25em; text-transform: uppercase;
 }
 
-.tb-dots { display: flex; gap: 6px; align-items: center; }
+/* ── DOTS — déplacés en bas, centrés au-dessus de la caption bar ── */
+.tb-dots {
+    position: fixed;
+    bottom: 4.8rem;          /* juste au-dessus de la caption bar */
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    z-index: 95;
+    background: rgba(0,0,0,0.25);
+    backdrop-filter: blur(4px);
+    padding: 6px 12px;
+    border-radius: 20px;
+}
 
 .tb-dot {
-    width: 7px; height: 7px; border-radius: 50%;
-    border: 1px solid rgba(240,235,224,0.35);
+    width: 8px; height: 8px; border-radius: 50%;
+    border: 1px solid rgba(240,235,224,0.45);
     cursor: pointer; transition: all 0.25s;
 }
-.tb-dot:hover { transform: scale(1.5); border-color: rgba(240,235,224,0.7); }
-.tb-dot.active { background: var(--paper); border-color: var(--paper); }
+.tb-dot:hover { transform: scale(1.4); border-color: rgba(240,235,224,0.8); }
+.tb-dot.active { background: var(--paper); border-color: var(--paper); transform: scale(1.2); }
 
 .hotspot {
     position: absolute; transform: translate(-50%, -50%);
@@ -120,7 +134,7 @@ html, body {
     border: 1px solid rgba(240,235,224,0.1);
     border-left: 3px solid var(--accent);
     padding: 1.4rem 1.5rem 1.3rem;
-    width: 300px;
+    width: 340px;          /* était 300px */
     backdrop-filter: blur(16px); -webkit-backdrop-filter: blur(16px);
     position: relative;
 }
@@ -139,13 +153,13 @@ html, body {
 .panel-tag::after { content: ''; flex: 1; height: 1px; background: rgba(192,57,43,0.3); }
 
 .panel-title {
-    font-family: var(--serif); font-size: 1.1rem; font-weight: 600;
+    font-family: var(--serif); font-size: 1.2rem; font-weight: 600;
     color: var(--paper); line-height: 1.25; margin-bottom: 0.7rem;
 }
 
 .panel-body {
-    font-size: 0.78rem; font-weight: 300;
-    color: rgba(240,235,224,0.78); line-height: 1.7;
+    font-size: 0.9rem; font-weight: 300;
+    color: rgba(240,235,224,0.82); line-height: 1.75;
 }
 
 .panel-close {
@@ -218,7 +232,7 @@ html, body {
 #intro.out { opacity: 0; pointer-events: none; }
 
 .i-eyebrow {
-    font-size: 0.62rem; font-weight: 600; letter-spacing: 0.4em;
+    font-size: 0.75rem; font-weight: 600; letter-spacing: 0.4em;
     text-transform: uppercase; color: var(--accent); margin-bottom: 1.8rem;
 }
 
@@ -231,42 +245,42 @@ html, body {
 .i-rule { width: 44px; height: 1px; background: var(--accent); margin: 1.8rem auto; }
 
 .i-context {
-    font-size: 0.82rem; font-weight: 300;
-    color: rgba(240,235,224,0.5);
-    max-width: 400px; line-height: 1.75; margin-bottom: 1.4rem;
+    font-size: 1rem; font-weight: 300;
+    color: rgba(240,235,224,0.6);
+    max-width: 460px; line-height: 1.8; margin-bottom: 1.4rem;
 }
 
 .i-problematique {
     position: relative;
     border-left: 2px solid var(--accent);
-    padding: 0.8rem 1.2rem;
+    padding: 0.9rem 1.3rem;
     margin: 0 auto 1.6rem;
-    max-width: 480px;
+    max-width: 500px;
     text-align: left;
     font-family: var(--serif);
-    font-size: clamp(0.82rem, 1.6vw, 1rem);
+    font-size: clamp(1rem, 1.8vw, 1.15rem);
     font-style: italic;
     font-weight: 300;
-    color: rgba(240,235,224,0.82);
-    line-height: 1.7;
+    color: rgba(240,235,224,0.88);
+    line-height: 1.75;
 }
 
 .i-prob-label {
     display: block;
     font-family: var(--sans);
     font-style: normal;
-    font-size: 0.55rem;
+    font-size: 0.68rem;
     font-weight: 600;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: var(--accent);
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.5rem;
 }
 
 .i-sub {
-    font-size: 0.75rem; font-weight: 300;
-    color: rgba(240,235,224,0.35);
-    max-width: 400px; line-height: 1.75;
+    font-size: 0.9rem; font-weight: 300;
+    color: rgba(240,235,224,0.45);
+    max-width: 440px; line-height: 1.8;
     letter-spacing: 0.02em; margin-bottom: 0;
 }
 
@@ -274,16 +288,16 @@ html, body {
     margin-top: 2.2rem;
     border: 1px solid rgba(240,235,224,0.25);
     background: transparent; color: var(--paper);
-    font-family: var(--sans); font-size: 0.68rem; font-weight: 600;
+    font-family: var(--sans); font-size: 0.8rem; font-weight: 600;
     letter-spacing: 0.32em; text-transform: uppercase;
-    padding: 0.9rem 2.6rem; cursor: pointer;
+    padding: 1rem 2.8rem; cursor: pointer;
     transition: background 0.3s, border-color 0.3s;
 }
 .i-btn:hover { background: var(--accent); border-color: var(--accent); }
 
 .conclusion-screen {
     position: absolute; inset: 0;
-    display: flex; align-items: center; justify-content: center;
+    display: flex; align-items: flex-start; justify-content: center;
     z-index: 10;
     background: rgba(10, 9, 7, 0.82);
     backdrop-filter: blur(6px);
@@ -298,25 +312,24 @@ html, body {
 }
 
 .concl-eyebrow {
-    font-size: 0.58rem; font-weight: 600; letter-spacing: 0.3em;
+    font-size: 0.75rem; font-weight: 600; letter-spacing: 0.3em;
     text-transform: uppercase; color: var(--accent); margin-bottom: 0.8rem;
 }
 
 .concl-title {
-    font-family: var(--serif); font-size: clamp(1.4rem, 3vw, 2.2rem);
+    font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.4rem);
     font-weight: 300; color: var(--paper); line-height: 1.2; margin-bottom: 1rem;
 }
 
 .concl-rule { width: 40px; height: 1px; background: var(--accent); margin-bottom: 1.4rem; }
 
 .concl-body {
-    font-size: 0.88rem; font-weight: 300;
-    color: rgba(240,235,224,0.78); line-height: 1.85;
+    font-size: 1.05rem; font-weight: 300;
+    color: rgba(240,235,224,0.82); line-height: 1.9;
     margin-bottom: 1rem;
 }
 .concl-body strong { color: var(--paper); font-weight: 600; }
-.concl-body em     { font-style: italic; color: rgba(240,235,224,0.6); }
-
+.concl-body em     { font-style: italic; color: rgba(240,235,224,0.65); }
 .concl-sources {
     margin-top: 2rem;
     border-top: 1px solid rgba(240,235,224,0.1);
@@ -344,12 +357,56 @@ html, body {
     color: var(--accent);
 }
 
+.conclusion-active .tb-dots {
+    display: none;
+}
+
+
+/* ── Lien source dans le panel hotspot ── */
+.panel-body-text {
+    display: block;
+    margin-bottom: 0.6rem;
+}
+.panel-source-link {
+    display: inline-block;
+    margin-top: 0.4rem;
+    font-size: 0.72rem;
+    font-weight: 400;
+    color: var(--accent);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(192,57,43,0.35);
+    padding-bottom: 1px;
+    transition: color 0.2s, border-color 0.2s;
+    line-height: 1.5;
+    word-break: break-word;
+}
+.panel-source-link:hover { color: var(--paper); border-color: var(--paper); }
+
+/* ── Liens dans la conclusion ── */
+.concl-sources ul {
+    list-style: none; padding: 0;
+    display: flex; flex-direction: column; gap: 0.5rem;
+}
+.concl-sources li {
+    font-size: 0.88rem; font-weight: 300;
+    padding-left: 1rem; position: relative; line-height: 1.5;
+}
+.concl-sources li::before { content: '—'; position: absolute; left: 0; color: var(--accent); }
+.concl-sources a {
+    color: rgba(240,235,224,0.6);
+    text-decoration: none;
+    border-bottom: 1px solid rgba(240,235,224,0.15);
+    transition: color 0.2s, border-color 0.2s;
+}
+.concl-sources a:hover { color: var(--paper); border-color: rgba(240,235,224,0.5); }
+
 @media (max-width: 580px) {
-    .panel-box { width: min(88vw, 300px); }
+    .panel-box { width: min(92vw, 340px); }
     #nav-prev  { left: 0.3rem; }
     #nav-next  { right: 0.3rem; }
     #topbar    { padding: 0 1rem; }
     #caption-bar { padding: 0.8rem 1rem 1.2rem; }
     .concl-inner { padding: 0 0.5rem; }
-    .i-problematique { font-size: 0.82rem; }
+    .i-problematique { font-size: 1rem; }
+    .i-context { font-size: 0.9rem; }
 }

@@ -1,4 +1,6 @@
 const SCENES = [
+
+    // ── SCÈNE 1 : Transformation urbaine ──────────────────────────────────
     {
         img: './images/las_ramblas.png',
         eyebrow: 'Volet 1 — Transformation urbaine',
@@ -7,20 +9,25 @@ const SCENES = [
             {
                 x: 50, y: 32, side: 'right', tag: 'Piétonisation',
                 title: 'De la chaussée à la promenade',
-                body: 'La transformation de Las Ramblas en axe piétonnier s\'est accélérée dans les années 1990. Sans voitures, l\'avenue est devenue un espace de déambulation idéal — mais aussi un couloir absorbant des millions de visiteurs par an. Les politiques d\'aménagement urbain ont produit l\'effet inverse à leur objectif initial : en libérant l\'espace, elles ont amplifié la pression touristique au lieu de redonner l\'avenue aux habitants. (Source : Mairie de Barcelone, Plan de réhabilitation de Las Ramblas, 2018)'
+                body: 'La transformation de Las Ramblas en axe piétonnier s\'est accélérée dans les années 1990. Sans voitures, l\'avenue est devenue un espace de déambulation idéal — mais aussi un couloir absorbant des millions de visiteurs par an. Les politiques d\'aménagement urbain ont produit l\'effet inverse à leur objectif initial : en libérant l\'espace, elles ont amplifié la pression touristique au lieu de redonner l\'avenue aux habitants.',
+                link: { label: 'Transition Europe — Le modèle touristique de Barcelone (2024)', url: 'https://transition-europe.eu/news/le-modele-touristique-de-barcelone-un-equilibre-repenser-entre-economie-et-qualite-de-vie/' }
             },
             {
                 x: 18, y: 58, side: 'right', tag: 'Kiosques',
                 title: 'Un commerce local en voie de disparition',
-                body: 'Les kiosques à fleurs et à journaux sont emblématiques de Las Ramblas depuis le XIXe siècle. Mais depuis les années 2000, leur nombre diminue : les coûts d\'exploitation augmentent tandis que la clientèle locale se raréfie. Ce mouvement illustre un basculement économique profond — l\'espace public se réoriente vers la consommation touristique, marginalisant les usages du quotidien qui faisaient l\'identité de l\'avenue. (Source : allinfo.space, 2017)'
+                body: 'Les kiosques à fleurs et à journaux sont emblématiques de Las Ramblas depuis le XIXe siècle. Mais leur nombre diminue régulièrement : les coûts d\'exploitation augmentent tandis que la clientèle locale se raréfie. Ce mouvement illustre un basculement économique profond — l\'espace public se réoriente vers la consommation touristique, marginalisant les usages du quotidien qui faisaient l\'identité de l\'avenue.',
+                link: { label: 'La Brèche — Face à la touristification, les habitants cherchent les clefs (2026)', url: 'https://journal-labreche.fr/face-a-la-touristification-les-habitants-cherchent-les-clefs/' }
             },
             {
                 x: 80, y: 62, side: 'left', tag: 'Organisation spatiale',
                 title: 'Un espace conçu pour les flux massifs',
-                body: 'Las Ramblas concentre sur 1,2 km une densité piétonne parmi les plus élevées d\'Europe. Terrasses, artistes de rue, kiosques, passages piétons : chaque élément de l\'espace a été progressivement réorganisé pour absorber des flux massifs. Cette logique de gestion des foules révèle comment Barcelone a glissé d\'une ville conçue pour ses habitants à une ville organisée pour ses visiteurs. (Source : Office du Tourisme de Barcelone, 2023)'
+                body: 'Las Ramblas concentre sur 1,2 km une densité piétonne parmi les plus élevées d\'Europe. Terrasses, artistes de rue, kiosques, passages piétons : chaque élément de l\'espace a été progressivement réorganisé pour absorber des flux massifs. Cette logique révèle comment Barcelone a glissé d\'une ville conçue pour ses habitants à une ville organisée pour ses visiteurs.',
+                link: { label: 'Euronews — Comment les Barcelonais ont dit "No" au tourisme de masse (2024)', url: 'https://fr.euronews.com/voyages/2024/12/23/comment-les-barcelonais-ont-dit-no-au-tourisme-de-masse-en-2024' }
             }
         ]
     },
+
+    // ── SCÈNE 2 : Mutation économique ─────────────────────────────────────
     {
         img: './images/La-Ramblas-transaction.jpg',
         eyebrow: 'Volet 2 — Mutation économique',
@@ -29,15 +36,19 @@ const SCENES = [
             {
                 x: 65, y: 42, side: 'left', tag: 'Souvenirs standardisés',
                 title: 'La perte d\'authenticité économique',
-                body: 'Les boutiques de Las Ramblas vendent les mêmes produits — magnets, maillots du Barça, sangria en bouteille — qu\'à Paris, Rome ou Amsterdam. Cette standardisation n\'est pas qu\'esthétique : elle révèle une substitution économique. Les commerces répondant aux besoins des habitants (épiceries, boulangeries, librairies) sont évincés par des enseignes dont la survie dépend entièrement des touristes. Barcelone risque de perdre sa capacité à fonctionner comme une vraie ville mixte. (Source : Le Monde, juillet 2025)'
+                body: 'Les boutiques de Las Ramblas vendent les mêmes produits qu\'à Paris, Rome ou Amsterdam. Cette standardisation révèle une substitution économique profonde : les commerces répondant aux besoins des habitants sont évincés par des enseignes dont la survie dépend entièrement des touristes. Le tourisme représente 14 % de l\'économie de Barcelone — une dépendance qui fragilise l\'identité locale.',
+                link: { label: 'SeLoger — Barcelone, les conséquences du surtourisme (2024)', url: 'https://edito.seloger.com/actualites/monde/barcelone-consequences-surtourisme-article-18968.html' }
             },
             {
                 x: 28, y: 58, side: 'right', tag: 'Inflation & exclusion',
                 title: 'Quand le tourisme expulse les habitants',
-                body: 'Entre 2015 et 2023, les loyers dans les quartiers adjacents à Las Ramblas ont augmenté de plus de 40 %. Cette hausse est directement corrélée à la pression touristique : les propriétaires préfèrent louer en courte durée plutôt qu\'à des résidents. Résultat : les Barcelonais à revenus moyens quittent le centre-ville, creusant une fracture sociale et spatiale que les politiques peinent à enrayer. (Source : Mairie de Barcelone, Rapport surtourisme, 2022)'
+                body: 'La pression touristique pousse les propriétaires à privilégier la location courte durée plutôt que les baux résidentiels. Résultat : les Barcelonais à revenus moyens quittent le centre-ville, creusant une fracture sociale et spatiale. Le tourisme représente certes une manne économique, mais sans redistribution équitable il accentue les inégalités.',
+                link: { label: 'Transition Europe — Le modèle touristique de Barcelone (2024)', url: 'https://transition-europe.eu/news/le-modele-touristique-de-barcelone-un-equilibre-repenser-entre-economie-et-qualite-de-vie/' }
             }
         ]
     },
+
+    // ── SCÈNE 3 : Tourisme international ──────────────────────────────────
     {
         img: './images/la-rambla-barcelona-tourist.jpg',
         eyebrow: 'Volet 3 — Tourisme international',
@@ -45,21 +56,26 @@ const SCENES = [
         hotspots: [
             {
                 x: 50, y: 38, side: 'right', tag: 'Fréquentation',
-                title: '200 000 personnes par jour',
-                body: 'Las Ramblas accueille jusqu\'à 200 000 visiteurs quotidiens, ce qui en fait l\'une des artères les plus fréquentées d\'Europe. Cette hyperfréquentation génère une pression constante sur les infrastructures et dégrade la qualité de vie des résidents. Elle illustre l\'intégration totale de Barcelone dans la mondialisation touristique — et sa dépendance croissante à cette attractivité pour son économie. (Source : Office du Tourisme de Barcelone, 2023 ; BFM TV, 2017)'
+                title: 'Plus de 15 millions de touristes par an',
+                body: 'Barcelone accueille plus de 15 millions de touristes par an, avec jusqu\'à 170 000 visiteurs par jour en haute saison. Las Ramblas est l\'épicentre de ce flux. Cette hyperfréquentation génère une pression constante sur les infrastructures et dégrade la qualité de vie des résidents, révélant les limites d\'un modèle fondé sur l\'attractivité à tout prix.',
+                link: { label: 'Euronews — Comment les Barcelonais ont dit "No" au tourisme de masse (2024)', url: 'https://fr.euronews.com/voyages/2024/12/23/comment-les-barcelonais-ont-dit-no-au-tourisme-de-masse-en-2024' }
             },
             {
-                x: 18, y: 62, side: 'right', tag: 'Mondialisation',
-                title: 'Barcelone sur la carte mondiale',
-                body: 'Las Ramblas figure dans tous les guides de voyage internationaux et génère des millions de publications sur les réseaux sociaux chaque année. Cette visibilité mondiale est un atout économique majeur, mais elle crée aussi une dépendance : quand le tourisme chute (pandémie Covid, instabilité politique), l\'économie locale est fragilisée. La mondialisation touristique amplifie autant les opportunités que les vulnérabilités. (Source : Euronews, août 2017 ; BFM TV, 2017)'
+                x: 18, y: 62, side: 'right', tag: 'Tensions sociales',
+                title: 'Barcelone ne veut plus être à vendre',
+                body: 'En juillet 2024, des habitants ont arrosé de pistolets à eau les touristes sur Las Ramblas. Ce geste symbolique exprime une exaspération profonde : nuisances nocturnes, hausse des prix, perte d\'identité. Le mouvement "Barcelona no està en venda" ("Barcelone n\'est pas à vendre") illustre la fracture entre une ville mondialisée et ses propres résidents.',
+                link: { label: 'La Brèche — Face à la touristification, les habitants cherchent les clefs (2026)', url: 'https://journal-labreche.fr/face-a-la-touristification-les-habitants-cherchent-les-clefs/' }
             },
             {
-                x: 78, y: 68, side: 'left', tag: 'Coexistence',
-                title: 'Habitants et touristes : une cohabitation tendue',
-                body: 'La densité touristique de Las Ramblas génère des nuisances concrètes pour les résidents : bruit nocturne, encombrement des transports, hausse des prix en supermarché. Des mouvements de protestation — comme "Barcelona no està en venda" ("Barcelone n\'est pas à vendre") — ont émergé pour dénoncer le tourisme de masse. La cohabitation entre résidents et visiteurs est devenue l\'un des enjeux politiques centraux de la ville. (Source : Euronews, 2017)'
+                x: 78, y: 68, side: 'left', tag: 'Mondialisation',
+                title: 'Une dépendance au tourisme mondial',
+                body: 'Las Ramblas figure dans tous les guides de voyage internationaux. Cette visibilité est un atout économique majeur, mais elle crée aussi une vulnérabilité : quand le tourisme chute (pandémie, instabilité politique), l\'économie locale est directement fragilisée. La mondialisation touristique amplifie autant les opportunités que les risques.',
+                link: { label: 'Transition Europe — Le modèle touristique de Barcelone (2024)', url: 'https://transition-europe.eu/news/le-modele-touristique-de-barcelone-un-equilibre-repenser-entre-economie-et-qualite-de-vie/' }
             }
         ]
     },
+
+    // ── SCÈNE 4 : Crises & Sécurité ───────────────────────────────────────
     {
         img: './images/Las-Ramblas-security.jpg',
         eyebrow: 'Volet 4 — Crises & Sécurité',
@@ -68,59 +84,52 @@ const SCENES = [
             {
                 x: 40, y: 48, side: 'right', tag: 'Attentat 2017',
                 title: 'Pourquoi Las Ramblas comme cible ?',
-                body: 'Le 17 août 2017, un camion-bélier fonça dans la foule sur Las Ramblas, causant 16 morts et plus de 130 blessés. Le choix de ce lieu n\'est pas un hasard : Las Ramblas est l\'un des endroits les plus photographiés et médiatisés d\'Europe. Frapper ici, c\'est frapper l\'image mondiale de Barcelone. Ce mécanisme — l\'attractivité comme facteur de risque — est le paradoxe central des métropoles touristiques modernes. (Source : TF1 Info, 2017 ; CNEWS, 2017 ; Le Vif, 2017)'
+                body: 'Le 17 août 2017, un camion-bélier fonça dans la foule sur Las Ramblas, causant 16 morts et plus de 130 blessés. Ce lieu a été choisi précisément pour sa visibilité mondiale : frapper ici, c\'est frapper l\'image de Barcelone. C\'est le paradoxe central des métropoles touristiques — leur attractivité les rend aussi vulnérables.',
+                link: { label: 'TF1 Info — Las Ramblas, passage incontournable des touristes (2017)', url: 'https://www.tf1info.fr/international/attaque-terroriste-attentat-a-barcelone-les-ramblas-passage-incontournable-des-touristes-2061621.html' }
             },
             {
                 x: 72, y: 62, side: 'left', tag: 'Sécurisation',
-                title: 'Entre protection et transformation de l\'atmosphère',
-                body: 'Après l\'attentat, des barrières anti-véhicules-béliers ont été installées aux entrées de l\'avenue et la présence des Mossos d\'Esquadra considérablement renforcée. Ce dispositif sécuritaire est efficace mais transforme durablement l\'ambiance de Las Ramblas : l\'avenue, autrefois symbole de liberté urbaine, ressemble aujourd\'hui à un espace sous surveillance permanente. Sécurité et attractivité entrent en tension. (Source : Euronews, 23 août 2017 ; Le Vif, 2017)'
+                title: 'Surveillance permanente et ambiance transformée',
+                body: 'Après l\'attentat, des barrières anti-véhicules-béliers ont été installées et la présence policière considérablement renforcée. Ce dispositif est efficace, mais transforme durablement l\'ambiance de Las Ramblas : l\'avenue, autrefois symbole de liberté urbaine, ressemble aujourd\'hui à un espace sous surveillance permanente. Sécurité et attractivité entrent en tension.',
+                link: { label: 'Euronews — Sécurité renforcée sur les sites touristiques (2017)', url: 'https://fr.euronews.com/2017/08/23/securite-renforcee-sur-les-sites-touristiques-a-barcelone' }
             },
             {
                 x: 18, y: 38, side: 'right', tag: 'Pickpockets',
                 title: 'L\'insécurité ordinaire, reflet du surtourisme',
-                body: 'Bien avant 2017, Las Ramblas figurait dans les guides comme l\'un des hauts lieux mondiaux du vol à la tire. Ce n\'est pas une coïncidence : la densité de touristes peu familiers de leur environnement, souvent distraits et porteurs de valeur, crée un écosystème favorable aux pickpockets. Cette insécurité structurelle est une conséquence directe du surtourisme — et nuit durablement à la réputation de Barcelone. (Source : Kolda News, 2017 ; TF1 Info, 2017)'
+                body: 'Bien avant 2017, Las Ramblas figurait dans les guides comme haut lieu mondial du vol à la tire. La densité de touristes peu familiers de leur environnement, souvent distraits, crée un écosystème favorable aux pickpockets. Cette insécurité structurelle est une conséquence directe du surtourisme — et nuit durablement à la réputation de la ville.',
+                link: { label: 'SeLoger — Barcelone, les conséquences du surtourisme (2024)', url: 'https://edito.seloger.com/actualites/monde/barcelone-consequences-surtourisme-article-18968.html' }
             }
         ]
     },
+
+    // ── SCÈNE 5 : Adaptation durable ──────────────────────────────────────
     {
         img: './images/las_ramblas.png',
         eyebrow: 'Volet 5 — Adaptation durable',
         title: 'Vers un équilibre résidents / tourisme',
         hotspots: [
             {
-                x: 18, y: 62, side: 'right', tag: 'Régulation Airbnb',
-                title: 'La bataille contre la location courte durée',
-                body: 'En 2015, Barcelone a instauré un moratoire total sur les nouvelles licences de location touristique. En 2023, la mairie a annoncé la suppression progressive de 10 000 licences Airbnb d\'ici 2028 — soit la quasi-totalité des appartements en location courte durée. L\'objectif est de redonner des logements abordables aux résidents et de freiner la gentrification accélérée par le tourisme. Ces mesures font de Barcelone un laboratoire mondial de la lutte contre le surtourisme. (Source : Mairie de Barcelone, 2022 ; Le Monde, 2025)'
+                x: 18, y: 62, side: 'right', tag: 'Interdiction Airbnb',
+                title: 'Supprimer 10 000 logements touristiques d\'ici 2028',
+                body: 'En 2028, Barcelone prévoit de supprimer la quasi-totalité de ses licences de location touristique — environ 10 000 appartements Airbnb. C\'est une mesure sans précédent en Europe. L\'objectif est de redonner des logements abordables aux résidents et de freiner la gentrification. Des propriétaires s\'y opposent, révélant les tensions entre économie touristique et droit au logement.',
+                link: { label: 'Euronews — Comment les Barcelonais ont dit "No" au tourisme de masse (2024)', url: 'https://fr.euronews.com/voyages/2024/12/23/comment-les-barcelonais-ont-dit-no-au-tourisme-de-masse-en-2024' }
             },
             {
-                x: 50, y: 32, side: 'right', tag: 'Patrimoine naturel',
-                title: 'Les platanes centenaires : un bien commun préservé',
-                body: 'Les rangées de platanes centenaires de Las Ramblas sont classées et protégées par la mairie. Leur ombre et leur présence constituent l\'un des rares éléments stables au milieu des transformations. Leur préservation illustre qu\'une politique de protection du patrimoine naturel peut fonctionner même dans un contexte de fort surtourisme — à condition d\'une volonté politique claire et d\'un cadre juridique adapté. (Source : Mairie de Barcelone)'
+                x: 50, y: 32, side: 'right', tag: 'Coopération régionale',
+                title: 'Barcelone et ses voisines unies contre le surtourisme',
+                body: 'En 2026, Barcelone et plusieurs villes de sa périphérie ont coordonné leurs politiques anti-surtourisme. Cette approche régionale cherche à éviter que les restrictions de Barcelone ne reportent simplement le problème dans les communes voisines. C\'est une reconnaissance que le surtourisme est un enjeu territorial, pas seulement municipal.',
+                link: { label: 'Equinox Magazine — Barcelone et ses villes voisines unies contre le tourisme (2026)', url: 'https://www.equinoxmagazine.fr/2026/03/10/barcelone-et-ses-villes-voisines-unies-contre-le-tourisme/' }
             },
             {
-                x: 80, y: 62, side: 'left', tag: 'Diversification',
-                title: 'Déconcentrer le tourisme pour mieux le gérer',
-                body: 'Barcelone investit dans la valorisation de quartiers alternatifs — Poblenou, Gràcia, Sant Pere — pour déconcentrer les flux touristiques hors de Las Ramblas et du centre historique. Cette stratégie de diversification cherche à répartir les bénéfices économiques du tourisme tout en réduisant la pression sur les zones saturées. Des résultats sont visibles, mais insuffisants face à la croissance continue de la fréquentation. (Source : Euronews, 2017 ; Mairie de Barcelone, 2022)'
+                x: 80, y: 62, side: 'left', tag: 'Impact environnemental',
+                title: 'Vers un tourisme plus qualitatif',
+                body: 'Barcelone cherche désormais à attirer moins de touristes mais de meilleure qualité — en augmentant la taxe touristique et en limitant les croisières. L\'objectif est de générer les mêmes revenus avec moins d\'impacts environnementaux et sociaux. La ville de Barcelone est devenue un laboratoire mondial de la régulation du surtourisme.',
+                link: { label: 'Visiter Barcelone — Surtourisme à Barcelone, réduire notre impact (2025)', url: 'https://visiterbarcelone.com/surtourisme-a-barcelone-reduire-notre-impact/' }
             }
         ]
     },
-    {
-        img: './images/Las-Ramblas-old.jpg',
-        eyebrow: 'Contexte historique — XIXe siècle',
-        title: 'Las Ramblas avant la mondialisation',
-        hotspots: [
-            {
-                x: 28, y: 58, side: 'right', tag: 'Usage local',
-                title: 'Une avenue conçue pour ses habitants',
-                body: 'Au XIXe siècle, Las Ramblas est l\'axe principal de la bourgeoisie barcelonaise : on s\'y promène, on y discute, on lit les journaux. L\'avenue est un espace de sociabilité locale, non un produit touristique. Comprendre cette origine est essentiel pour mesurer l\'ampleur de la transformation : en un siècle, Las Ramblas est passée d\'un espace vécu par ses habitants à un espace consommé par des millions de visiteurs de passage. (Source : allinfo.space, 2017 ; Le Parisien, 2017)'
-            },
-            {
-                x: 68, y: 38, side: 'left', tag: 'Architecture',
-                title: 'L\'héritage néoclassique sous pression',
-                body: 'Les façades haussmanniennes et les édifices néoclassiques qui bordent Las Ramblas — dont le Gran Teatre del Liceu, l\'une des grandes scènes lyriques d\'Europe — témoignent de l\'ambition culturelle du XIXe siècle. Aujourd\'hui, ces bâtiments cohabitent avec des enseignes de fast-food et des boutiques de souvenirs. La question est posée : comment préserver un héritage architectural et culturel exceptionnel face à la pression économique du tourisme de masse ? (Source : Le Parisien, 2017)'
-            }
-        ]
-    },
+
+    // ── SCÈNE 6 : Conclusion ───────────────────────────────────────────────
     {
         img: './images/Las-Ramblas-Barcelona.jpg',
         eyebrow: 'Conclusion',
@@ -130,8 +139,26 @@ const SCENES = [
     }
 ];
 
+// ── SOURCES COMPLÈTES — toutes vérifiées et accessibles ────────────────────
+const SOURCES = [
+    // Volets 1, 2, 3 — Transformation, économie, tourisme
+    { label: 'Euronews — Comment les Barcelonais ont dit "No" au tourisme de masse (déc. 2024)', url: 'https://fr.euronews.com/voyages/2024/12/23/comment-les-barcelonais-ont-dit-no-au-tourisme-de-masse-en-2024' },
+    { label: 'Transition Europe — Le modèle touristique de Barcelone (2024)',                     url: 'https://transition-europe.eu/news/le-modele-touristique-de-barcelone-un-equilibre-repenser-entre-economie-et-qualite-de-vie/' },
+    { label: 'SeLoger — Barcelone : les conséquences du surtourisme (2024)',                      url: 'https://edito.seloger.com/actualites/monde/barcelone-consequences-surtourisme-article-18968.html' },
+    { label: 'La Brèche — Face à la touristification, les habitants cherchent les clefs (2026)',  url: 'https://journal-labreche.fr/face-a-la-touristification-les-habitants-cherchent-les-clefs/' },
+    // Volet 4 — Sécurité
+    { label: 'TF1 Info — Las Ramblas, passage incontournable des touristes (2017)',               url: 'https://www.tf1info.fr/international/attaque-terroriste-attentat-a-barcelone-les-ramblas-passage-incontournable-des-touristes-2061621.html' },
+    { label: 'Euronews — Sécurité renforcée sur les sites touristiques à Barcelone (2017)',       url: 'https://fr.euronews.com/2017/08/23/securite-renforcee-sur-les-sites-touristiques-a-barcelone' },
+    { label: 'Le Vif — Sécurité des sites touristiques espagnols (2017)',                         url: 'https://www.levif.be/belgique/attentat-de-barcelone-la-securite-des-sites-touristiques-espagnols-fait-debat/' },
+    // Volet 5 — Adaptation
+    { label: 'Equinox Magazine — Barcelone et ses villes voisines unies contre le tourisme (2026)', url: 'https://www.equinoxmagazine.fr/2026/03/10/barcelone-et-ses-villes-voisines-unies-contre-le-tourisme/' },
+    { label: 'Visiter Barcelone — Surtourisme à Barcelone : réduire notre impact (2025)',          url: 'https://visiterbarcelone.com/surtourisme-a-barcelone-reduire-notre-impact/' },
+    { label: 'Euronews — Les attentats ébranlent le débat sur le tourisme de masse (2017)',        url: 'https://fr.euronews.com/2017/08/29/a-barcelone-les-attentats-ebranlent-le-debat-sur-le-tourisme-de-masse' },
+];
+
+// ── INIT ────────────────────────────────────────────────────────────────────
 let cur = 0;
-const fade = document.getElementById('fade');
+const fade  = document.getElementById('fade');
 const panel = document.getElementById('panel');
 
 const dotsEl = document.getElementById('tb-dots');
@@ -157,6 +184,10 @@ SCENES.forEach((s) => {
     layer.appendChild(vig);
 
     if (s.isConclusion) {
+        const sourcesHTML = SOURCES.map(src =>
+            `<li><a href="${src.url}" target="_blank" rel="noopener">${src.label}</a></li>`
+        ).join('');
+
         const conclusionEl = document.createElement('div');
         conclusionEl.className = 'conclusion-screen';
         conclusionEl.innerHTML = `
@@ -165,7 +196,7 @@ SCENES.forEach((s) => {
                 <h2 class="concl-title">Las Ramblas, miroir d'une ville en mutation</h2>
                 <div class="concl-rule"></div>
                 <p class="concl-body">
-                    À travers ses six volets, ce documentaire a montré comment Las Ramblas reflète
+                    À travers ses cinq volets, ce documentaire a montré comment Las Ramblas reflète
                     les grandes transformations de Barcelone : <strong>une ville qui s'est ouverte
                     au monde</strong> au prix d'une dépendance croissante au tourisme de masse.
                 </p>
@@ -175,7 +206,7 @@ SCENES.forEach((s) => {
                     standardisée. Le <em>rayonnement international</em> a propulsé Barcelone sur la scène
                     mondiale — mais cette visibilité a aussi créé des <em>vulnérabilités sécuritaires</em>
                     inédites. Face à ces tensions, la ville tente depuis 2015 de réguler les excès du
-                    surtourisme, avec des résultats encore mitigés.
+                    surtourisme, avec des mesures sans précédent en Europe.
                 </p>
                 <p class="concl-body">
                     Las Ramblas pose ainsi une question universelle : <em>comment une grande ville
@@ -185,19 +216,7 @@ SCENES.forEach((s) => {
                 </p>
                 <div class="concl-sources">
                     <p class="concl-sources-title">Sources</p>
-                    <ul>
-                        <li>Office du Tourisme de Barcelone — données de fréquentation 2023</li>
-                        <li>Mairie de Barcelone — Plan de réhabilitation (2018) ; Rapport surtourisme (2022)</li>
-                        <li>Le Monde — Surtourisme et villes d'escale, juillet 2025</li>
-                        <li>Euronews — Tourisme et sécurité à Barcelone, 2017</li>
-                        <li>BFM TV — Attentat de Barcelone et tourisme international, août 2017</li>
-                        <li>TF1 Info — Las Ramblas, artère emblématique, 2017</li>
-                        <li>Le Parisien — La Rambla, artère de Barcelone, 2017</li>
-                        <li>CNEWS — L'attentat et les Ramblas, 2017</li>
-                        <li>Le Vif — Sécurité des sites touristiques espagnols, 2017</li>
-                        <li>Kolda News — Sécurité sur les Ramblas, 2017</li>
-                        <li>allinfo.space — La Rambla, cœur de Barcelone, 2017</li>
-                    </ul>
+                    <ul>${sourcesHTML}</ul>
                 </div>
             </div>
         `;
@@ -208,7 +227,7 @@ SCENES.forEach((s) => {
         const hs = document.createElement('div');
         hs.className = 'hotspot';
         hs.style.left = h.x + '%';
-        hs.style.top = h.y + '%';
+        hs.style.top  = h.y + '%';
 
         const core = document.createElement('div');
         core.className = 'hs-core';
@@ -227,24 +246,29 @@ SCENES.forEach((s) => {
     document.getElementById('scene').appendChild(layer);
 });
 
+// ── PANEL ───────────────────────────────────────────────────────────────────
 function showPanel(h, hsEl) {
-    document.getElementById('p-tag').textContent = h.tag;
+    document.getElementById('p-tag').textContent   = h.tag;
     document.getElementById('p-title').textContent = h.title;
-    document.getElementById('p-body').textContent = h.body;
+
+    const linkHTML = h.link
+        ? `<a class="panel-source-link" href="${h.link.url}" target="_blank" rel="noopener">↗ ${h.link.label}</a>`
+        : '';
+    document.getElementById('p-body').innerHTML = `<span class="panel-body-text">${h.body}</span>${linkHTML}`;
 
     const rect = hsEl.getBoundingClientRect();
-    const vw = window.innerWidth;
-    const vh = window.innerHeight;
-    const pw = Math.min(300, vw * 0.88);
+    const vw   = window.innerWidth;
+    const vh   = window.innerHeight;
+    const pw   = Math.min(340, vw * 0.88);
 
     if (h.side === 'right' && rect.left + 26 + pw < vw - 16) {
-        panel.style.left = (rect.left + 26) + 'px';
+        panel.style.left  = (rect.left + 26) + 'px';
         panel.style.right = 'auto';
     } else {
         panel.style.right = (vw - rect.left + 14) + 'px';
-        panel.style.left = 'auto';
+        panel.style.left  = 'auto';
     }
-    const topVal = Math.max(60, Math.min(rect.top - 16, vh - 230));
+    const topVal = Math.max(60, Math.min(rect.top - 16, vh - 280));
     panel.style.top = topVal + 'px';
     panel.classList.add('visible');
 }
@@ -253,20 +277,21 @@ document.getElementById('panel-close').addEventListener('click', closePanel);
 document.getElementById('scene').addEventListener('click', closePanel);
 function closePanel() { panel.classList.remove('visible'); }
 
+// ── NAVIGATION ──────────────────────────────────────────────────────────────
 function activate(i) {
     document.querySelectorAll('.scene-layer').forEach((l, li) => l.classList.toggle('active', li === i));
-    document.querySelectorAll('.tb-dot').forEach((d, di) => d.classList.toggle('active', di === i));
+    document.querySelectorAll('.tb-dot').forEach((d, di)     => d.classList.toggle('active', di === i));
 
     document.getElementById('tb-label').textContent = `Scène ${i + 1} / ${SCENES.length}`;
-    document.getElementById('cap-ey').textContent = SCENES[i].isConclusion ? '' : SCENES[i].eyebrow;
-    document.getElementById('cap-ti').textContent = SCENES[i].isConclusion ? '' : SCENES[i].title;
+    document.getElementById('cap-ey').textContent   = SCENES[i].isConclusion ? '' : SCENES[i].eyebrow;
+    document.getElementById('cap-ti').textContent   = SCENES[i].isConclusion ? '' : SCENES[i].title;
 
     const capHint = document.getElementById('cap-hint');
     if (capHint) capHint.style.display = SCENES[i].isConclusion ? 'none' : '';
 
     const prev = document.getElementById('nav-prev');
     const next = document.getElementById('nav-next');
-    i === 0 ? prev.setAttribute('data-hidden', '') : prev.removeAttribute('data-hidden');
+    i === 0                 ? prev.setAttribute('data-hidden', '') : prev.removeAttribute('data-hidden');
     i === SCENES.length - 1 ? next.setAttribute('data-hidden', '') : next.removeAttribute('data-hidden');
 }
 
@@ -286,13 +311,13 @@ document.getElementById('nav-next').addEventListener('click', () => { if (cur < 
 
 document.addEventListener('keydown', e => {
     if (e.key === 'ArrowRight' && cur < SCENES.length - 1) go(cur + 1);
-    if (e.key === 'ArrowLeft' && cur > 0) go(cur - 1);
-    if (e.key === 'Escape') closePanel();
+    if (e.key === 'ArrowLeft'  && cur > 0)                 go(cur - 1);
+    if (e.key === 'Escape')                                 closePanel();
 });
 
 let tx = null;
 document.addEventListener('touchstart', e => { tx = e.touches[0].clientX; });
-document.addEventListener('touchend', e => {
+document.addEventListener('touchend',   e => {
     if (tx === null) return;
     const dx = e.changedTouches[0].clientX - tx;
     if (Math.abs(dx) > 48) go(dx < 0
